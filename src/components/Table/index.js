@@ -20,7 +20,7 @@ const Table = () => {
   });
   const entryRef = useRef(filter.quantity);
   useEffect(() => {
-    const url = `https://visualization--dashboard.herokuapp.com/api/v1/data/search?end_year=${filter.end_year}&topic=${filter.topic}&sector=${filter.sector}&region=${filter.region}&pestle=${filter.pestle}&source=${filter.source}&country=${filter.country}&quantity=${filter.quantity}&pagination=${filter.pagination}`;
+    const url = `https://visualization-dashboard-backend-2.onrender.com/api/v1/data/search?end_year=${filter.end_year}&topic=${filter.topic}&sector=${filter.sector}&region=${filter.region}&pestle=${filter.pestle}&source=${filter.source}&country=${filter.country}&quantity=${filter.quantity}&pagination=${filter.pagination}`;
     fetch(url)
       .then((res) => res.json())
       .then((json) => {

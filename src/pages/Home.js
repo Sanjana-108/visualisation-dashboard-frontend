@@ -7,17 +7,11 @@ import Table from "../components/Table";
 
 const Home = () => {
   const [data, setData] = useState({});
-  // useEffect(() => {
-  //   fetch(`https://localhost:5000/api/v1/data/stats`)
-  //     .then((res) => res.json())
-  //     .then((json) => setData(json.data))
-  //     .catch((err) => console.log(err));
-  // }, []);
   
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://localhost:5000/api/v1/data/stats`);
+        const response = await fetch(`https://visualization-dashboard-backend-2.onrender.com/api/v1/data/stats`);
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
