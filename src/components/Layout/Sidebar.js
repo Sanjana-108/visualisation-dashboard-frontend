@@ -55,7 +55,7 @@ const Sidebar = ({ sendToParent, toChild }) => {
         </div>
         <div className={`ps-3 ${!navActive && "d-none d-sm-block"}`}>
           <p className="m-0" style={{ fontSize: "15px" }}>
-            <small>Fiorella Isabella</small>
+            <small>Sanjana Katiyar</small>
           </p>
           <p className="m-0" style={{ fontSize: "12px" }}>
             <small>Administrator</small>
